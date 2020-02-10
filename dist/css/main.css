@@ -1,0 +1,136 @@
+#Hero, nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Cambio_Lenguaje_ES, .Cambio_Lenguaje_EN {
+  position: absolute;
+  bottom: 85%;
+  border: solid 2px;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+nav {
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+nav div {
+  display: inherit;
+  justify-content: center;
+}
+nav div img {
+  width: 100%;
+  height: -webkit-fill-available;
+}
+nav ul {
+  display: inherit;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inherit;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #000000;
+  font-weight: bold;
+}
+nav a {
+  display: inherit;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+nav a:hover {
+  border-bottom: #1b2e35 solid;
+}
+nav a:focus {
+  border-bottom: #000 solid;
+}
+
+#Hero {
+  text-align: center;
+}
+
+#Hero_Image img {
+  width: 100%;
+}
+
+#Hero_Text #Nombres {
+  font-size: 2.5rem;
+}
+#Hero_Text #Apellidos {
+  color: #007dfe;
+  font-size: 2.5rem;
+}
+#Hero_Text #Titular {
+  color: #1b2e35;
+  font-size: 2.5rem;
+}
+
+.frontend-text {
+  color: #007dfe;
+}
+
+.backend-text {
+  color: #1b2e35;
+}
+
+#Footer {
+  text-align: center;
+}
+#Footer a img {
+  width: 50px;
+  height: 50px;
+}
+
+#Footer_Copy {
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+}
+
+.Cambio_Lenguaje_EN {
+  left: 80%;
+}
+
+.Cambio_Lenguaje_ES {
+  right: 80%;
+}
+
+.mdc-button:not(:disabled) {
+  border: solid 1px #000000;
+  color: #000000;
+}
+.mdc-button:not(:disabled):hover {
+  color: #ffffff;
+  background-color: #000000;
+  animation: lang-button-anim 1.5s ease;
+}
+.mdc-button:not(:disabled):active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@keyframes lang-button-anim {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

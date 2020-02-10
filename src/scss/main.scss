@@ -1,0 +1,156 @@
+@import "../../node_modules/@material/animation/variables";
+@import "../../node_modules/@material/animation/functions";
+
+$primary-color: #007dfe;
+$secondary-color: #1b2e35;
+$text-primary: #000000;
+
+%flex-element {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+%cambio-lenguaje {
+  position: absolute;
+  bottom: 85%;
+  border: solid 2px;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  //padding-left: 5%;
+  //padding-right: 5%;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+nav {
+  @extend %flex-element;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+
+  div {
+    display: inherit;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: -webkit-fill-available;
+    }
+  }
+
+  ul {
+    display: inherit;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inherit;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: $text-primary;
+    font-weight: bold;
+  }
+
+  a {
+    display: inherit;
+    align-items: center;
+    text-decoration: none;
+    color: $text-primary;
+    &:hover {
+      border-bottom: $secondary-color solid;
+    }
+    &:focus {
+      border-bottom: #000 solid;
+    }
+  }
+}
+
+#Hero {
+  @extend %flex-element;
+  text-align: center;
+}
+
+#Hero_Image {
+  img {
+    width: 100%;
+  }
+}
+
+#Hero_Text {
+  #Nombres {
+    font-size: 2.5rem;
+  }
+  #Apellidos {
+    color: $primary-color;
+    font-size: 2.5rem;
+  }
+  #Titular {
+    color: $secondary-color;
+    font-size: 2.5rem;
+  }
+}
+
+.frontend-text {
+  color: $primary-color;
+}
+
+.backend-text {
+  color: $secondary-color;
+}
+
+#Footer {
+  text-align: center;
+  a img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+#Footer_Copy {
+  width: 100%;
+  text-align: center;
+  color: $text-primary;
+  font-weight: bold;
+}
+
+.Cambio_Lenguaje_EN {
+  @extend %cambio-lenguaje;
+  left: 80%;
+}
+
+.Cambio_Lenguaje_ES {
+  @extend %cambio-lenguaje;
+  right: 80%;
+}
+
+.mdc-button:not(:disabled) {
+  border: solid 1px #000000;
+  color: $text-primary;
+  &:hover {
+    color: #ffffff;
+    background-color: $text-primary;
+    animation: lang-button-anim 1.5s ease;
+  }
+  &:active {
+    background-color: $text-primary;
+    color: #ffffff;
+  }
+}
+
+@keyframes lang-button-anim {
+  from {
+    background-color: transparent;
+  }
+
+  to {
+    background-color: $text-primary;
+    color: #ffffff;
+  }
+}
