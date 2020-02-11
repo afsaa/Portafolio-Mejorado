@@ -17,6 +17,7 @@ $text-primary: #000000;
   border: solid 2px;
 }
 
+// Página Principal
 body {
   height: 100vh;
   margin: 0;
@@ -56,20 +57,25 @@ nav {
     margin-right: 10px;
     color: $text-primary;
     font-weight: bold;
+    a {
+      display: inherit;
+      align-items: center;
+      text-decoration: none;
+      color: $text-primary;
+      &:hover {
+        border-bottom: $secondary-color solid;
+      }
+      &:focus {
+        border-bottom: #000 solid;
+      }
+    }
   }
+}
 
-  a {
-    display: inherit;
-    align-items: center;
-    text-decoration: none;
-    color: $text-primary;
-    &:hover {
-      border-bottom: $secondary-color solid;
-    }
-    &:focus {
-      border-bottom: #000 solid;
-    }
-  }
+#Imagen_de_marca a {
+  font-size: 35px;
+  font-family: "Bungee Shade", sans-serif;
+  color: $text-primary;
 }
 
 #Hero {
@@ -153,4 +159,35 @@ nav {
     background-color: $text-primary;
     color: #ffffff;
   }
+}
+
+// Página Mi Historia
+%grid-element2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+%center_vertically_horizontally {
+  align-self: center;
+  justify-self: center;
+}
+
+.Grid_Container {
+  @extend %grid-element2x2;
+}
+
+#Retrato {
+  @extend %center_vertically_horizontally;
+  img {
+    width: 100%;
+    height: fit-content;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+}
+
+#Mi_Historia {
+  margin: 10px;
+  text-align: center;
 }

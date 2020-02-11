@@ -45,17 +45,23 @@ nav li {
   color: #000000;
   font-weight: bold;
 }
-nav a {
+nav li a {
   display: inherit;
   align-items: center;
   text-decoration: none;
   color: #000000;
 }
-nav a:hover {
+nav li a:hover {
   border-bottom: #1b2e35 solid;
 }
-nav a:focus {
+nav li a:focus {
   border-bottom: #000 solid;
+}
+
+#Imagen_de_marca a {
+  font-size: 35px;
+  font-family: "Bungee Shade", sans-serif;
+  color: #000000;
 }
 
 #Hero {
@@ -131,6 +137,28 @@ nav a:focus {
     background-color: #000000;
     color: #ffffff;
   }
+}
+.Grid_Container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+#Retrato {
+  align-self: center;
+  justify-self: center;
+}
+
+#Retrato img {
+  width: 100%;
+  height: fit-content;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+#Mi_Historia {
+  margin: 10px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
