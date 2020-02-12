@@ -80,6 +80,7 @@ nav {
 
 #Hero {
   @extend %flex-element;
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -175,10 +176,12 @@ nav {
 
 .Grid_Container {
   @extend %grid-element2x2;
+  animation: history-page-anim 2s ease-in;
 }
 
 #Retrato {
   @extend %center_vertically_horizontally;
+  animation: flip-image 2s ease-in;
   img {
     width: 100%;
     height: fit-content;
@@ -190,4 +193,23 @@ nav {
 #Mi_Historia {
   margin: 10px;
   text-align: center;
+}
+
+@keyframes history-page-anim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes flip-image {
+  from {
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
 }

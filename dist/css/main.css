@@ -65,6 +65,7 @@ nav li a:focus {
 }
 
 #Hero {
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -149,6 +150,13 @@ nav li a:focus {
   justify-self: center;
 }
 
+.Grid_Container {
+  animation: history-page-anim 2s ease-in;
+}
+
+#Retrato {
+  animation: flip-image 2s ease-in;
+}
 #Retrato img {
   width: 100%;
   height: fit-content;
@@ -159,6 +167,20 @@ nav li a:focus {
 #Mi_Historia {
   margin: 10px;
   text-align: center;
+}
+
+@keyframes history-page-anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes flip-image {
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
