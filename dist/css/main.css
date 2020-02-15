@@ -1,10 +1,10 @@
-#Hero, nav {
+#Hero, #menu {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.Cambio_Lenguaje_ES, .Cambio_Lenguaje_EN {
+.cambio-lenguaje {
   position: absolute;
   bottom: 85%;
   border: solid 2px;
@@ -17,27 +17,32 @@ body {
   background-color: #ffffff;
 }
 
-nav {
+#menu {
   height: 50px;
   margin: 0;
   padding: 0;
 }
-nav div {
+#menu-branding a {
+  font-size: 35px;
+  font-family: "Bungee Shade", sans-serif;
+  color: #000000;
+}
+#menu div {
   display: inherit;
   justify-content: center;
 }
-nav div img {
+#menu div img {
   width: 100%;
   height: -webkit-fill-available;
 }
-nav ul {
+#menu .menu-nav {
   display: inherit;
   justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-nav li {
+#menu .nav-item {
   display: inherit;
   justify-content: center;
   margin-left: 10px;
@@ -45,23 +50,17 @@ nav li {
   color: #000000;
   font-weight: bold;
 }
-nav li a {
+#menu .nav-item .nav-link {
   display: inherit;
   align-items: center;
   text-decoration: none;
   color: #000000;
 }
-nav li a:hover {
+#menu .nav-item .nav-link:hover {
   border-bottom: #1b2e35 solid;
 }
-nav li a:focus {
+#menu .nav-item .nav-link.current {
   border-bottom: #000 solid;
-}
-
-#Imagen_de_marca a {
-  font-size: 35px;
-  font-family: "Bungee Shade", sans-serif;
-  color: #000000;
 }
 
 #Hero {
@@ -108,12 +107,11 @@ nav li a:focus {
   font-weight: bold;
 }
 
-.Cambio_Lenguaje_EN {
-  left: 80%;
+.cambio-lenguaje-en {
+  left: 70%;
 }
-
-.Cambio_Lenguaje_ES {
-  right: 80%;
+.cambio-lenguaje-es {
+  left: 10%;
 }
 
 .mdc-button:not(:disabled) {
@@ -130,6 +128,11 @@ nav li a:focus {
   color: #ffffff;
 }
 
+.mdc-button__ripple::before,
+.mdc-button__ripple::after {
+  background-color: #000000;
+}
+
 @keyframes lang-button-anim {
   from {
     background-color: transparent;
@@ -142,7 +145,6 @@ nav li a:focus {
 .Grid_Container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
 }
 
 #Retrato {
@@ -181,6 +183,56 @@ nav li a:focus {
   to {
     transform: rotateY(360deg);
   }
+}
+#experiences {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 10px;
+}
+#experiences .experience {
+  width: 90%;
+  padding: 10px;
+  align-self: stretch;
+  justify-self: center;
+  align-content: center;
+  border: 2px solid #007dfe;
+  border-radius: 15px;
+  opacity: 0.8;
+  background-color: #000000;
+  color: #ffffff;
+}
+#experiences .experience h1 {
+  text-align: center;
+}
+
+#cards-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#cards-container .card {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #007dfe;
+  border-radius: 10px;
+  background-image: url("../../dist/img/coding-concept.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+#cards-container .card .card-layout {
+  margin-top: 5rem;
+  background: transparent;
+}
+#cards-container .card .card-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  background-color: #000000;
 }
 
 /*# sourceMappingURL=main.css.map */

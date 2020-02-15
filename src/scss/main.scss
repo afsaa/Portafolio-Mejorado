@@ -27,11 +27,17 @@ body {
   background-color: #ffffff;
 }
 
-nav {
+#menu {
   @extend %flex-element;
   height: 50px;
   margin: 0;
   padding: 0;
+
+  &-branding a {
+    font-size: 35px;
+    font-family: "Bungee Shade", sans-serif;
+    color: $text-primary;
+  }
 
   div {
     display: inherit;
@@ -42,7 +48,7 @@ nav {
     }
   }
 
-  ul {
+  .menu-nav {
     display: inherit;
     justify-content: center;
     margin: 0;
@@ -50,32 +56,27 @@ nav {
     list-style: none;
   }
 
-  li {
+  .nav-item {
     display: inherit;
     justify-content: center;
     margin-left: 10px;
     margin-right: 10px;
     color: $text-primary;
     font-weight: bold;
-    a {
+    .nav-link {
       display: inherit;
       align-items: center;
       text-decoration: none;
       color: $text-primary;
       &:hover {
+        //border-bottom-width: 1px;
         border-bottom: $secondary-color solid;
       }
-      &:focus {
+      &.current {
         border-bottom: #000 solid;
       }
     }
   }
-}
-
-#Imagen_de_marca a {
-  font-size: 35px;
-  font-family: "Bungee Shade", sans-serif;
-  color: $text-primary;
 }
 
 #Hero {
@@ -127,14 +128,14 @@ nav {
   font-weight: bold;
 }
 
-.Cambio_Lenguaje_EN {
+.cambio-lenguaje {
   @extend %cambio-lenguaje;
-  left: 80%;
-}
-
-.Cambio_Lenguaje_ES {
-  @extend %cambio-lenguaje;
-  right: 80%;
+  &-en {
+    left: 70%;
+  }
+  &-es {
+    left: 10%;
+  }
 }
 
 .mdc-button:not(:disabled) {
@@ -149,6 +150,11 @@ nav {
     background-color: $text-primary;
     color: #ffffff;
   }
+}
+
+.mdc-button__ripple::before,
+.mdc-button__ripple::after {
+  background-color: #000000;
 }
 
 @keyframes lang-button-anim {
@@ -166,7 +172,6 @@ nav {
 %grid-element2x2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
 }
 
 %center_vertically_horizontally {
@@ -211,5 +216,58 @@ nav {
 
   to {
     transform: rotateY(360deg);
+  }
+}
+
+// Página Experiencia
+#experiences {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 10px;
+  .experience {
+    width: 90%;
+    padding: 10px;
+    align-self: stretch;
+    justify-self: center;
+    align-content: center;
+    border: 2px solid #007dfe;
+    border-radius: 15px;
+    opacity: 0.8;
+    background-color: #000000;
+    color: #ffffff;
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+//Pagina Proyectos
+#cards-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #007dfe;
+    border-radius: 10px;
+    background-image: url("../../dist/img/coding-concept.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    .card-layout {
+      margin-top: 5rem;
+      background: transparent;
+    }
+    .card-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      background-color: #000000;
+    }
   }
 }
