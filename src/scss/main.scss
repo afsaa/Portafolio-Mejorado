@@ -236,38 +236,99 @@ body {
     opacity: 0.8;
     background-color: #000000;
     color: #ffffff;
-    h1 {
-      text-align: center;
-    }
   }
 }
 
 //Pagina Proyectos
+#page-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
 #cards-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
   .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
     padding: 10px;
     border: 1px solid #007dfe;
     border-radius: 10px;
-    background-image: url("../../dist/img/coding-concept.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     color: #ffffff;
+    .card-img {
+      height: 20rem;
+    }
     .card-layout {
-      margin-top: 5rem;
+      text-align: center;
       background: transparent;
+      & h2 {
+        margin: 10px;
+        color: #ffffff;
+      }
     }
     .card-link {
       display: flex;
       align-items: center;
+      margin: 10px;
+      padding: 5px;
       text-decoration: none;
       color: inherit;
       background-color: #000000;
+      border: 2px solid $primary-color;
+      border-radius: 20px;
+      text-align: center;
+      transition: color 1s, background-color 1s;
+      & i {
+        margin: 2.5px;
+      }
+      &:hover {
+        color: #000000;
+        background-color: #ffffff;
+      }
+      &:active {
+        color: #000000;
+        background-color: #ffffff;
+      }
     }
+  }
+  .renacer {
+    padding: 3.8rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../dist/img/renacer-web.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+  }
+  .starwars {
+    padding: 4rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../dist/img/star-wars-web.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+  }
+  .importexp {
+    padding: 8rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../dist/img/importexp-web.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+  }
+  .javana {
+    padding: 8rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../dist/img/confecciones-javana-web.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
   }
 }
