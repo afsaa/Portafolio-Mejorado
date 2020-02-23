@@ -202,37 +202,106 @@ body {
   background-color: #000000;
   color: #ffffff;
 }
-#experiences .experience h1 {
+
+#page-title {
+  text-transform: uppercase;
   text-align: center;
 }
 
 #cards-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 #cards-container .card {
-  margin: 10px;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.6rem;
+  padding: 0.6rem;
   border: 1px solid #007dfe;
   border-radius: 10px;
-  background-image: url("../../dist/img/coding-concept.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #ffffff;
 }
+#cards-container .card .card-img {
+  height: 20rem;
+}
 #cards-container .card .card-layout {
-  margin-top: 5rem;
+  text-align: center;
   background: transparent;
+}
+#cards-container .card .card-layout h2 {
+  margin: 10px;
+  color: #ffffff;
 }
 #cards-container .card .card-link {
   display: flex;
   align-items: center;
+  margin: 10px;
+  padding: 5px;
   text-decoration: none;
   color: inherit;
   background-color: #000000;
+  border: 2px solid #007dfe;
+  border-radius: 20px;
+  text-align: center;
+  transition: color 1s, background-color 1s;
+}
+#cards-container .card .card-link i {
+  margin: 2.5px;
+}
+#cards-container .card .card-link:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+#cards-container .card .card-link:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+#cards-container .renacer {
+  padding: 3.8rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../dist/img/renacer-web.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+}
+#cards-container .renacer:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../dist/img/renacer-web.JPG");
+}
+#cards-container .starwars {
+  padding: 4rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../dist/img/star-wars-web.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+}
+#cards-container .starwars:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../dist/img/star-wars-web.JPG");
+}
+#cards-container .importexp {
+  padding: 8rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../dist/img/importexp-web.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+}
+#cards-container .importexp:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../dist/img/importexp-web.jpg");
+}
+#cards-container .javana {
+  padding: 8rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../dist/img/confecciones-javana-web.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+}
+#cards-container .javana:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../dist/img/confecciones-javana-web.jpg");
 }
 
 /*# sourceMappingURL=main.css.map */

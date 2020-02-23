@@ -21,8 +21,6 @@ $text-primary: #000000;
 body {
   height: 100vh;
   margin: 0;
-  //padding-left: 5%;
-  //padding-right: 5%;
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
 }
@@ -69,7 +67,6 @@ body {
       text-decoration: none;
       color: $text-primary;
       &:hover {
-        //border-bottom-width: 1px;
         border-bottom: $secondary-color solid;
       }
       &.current {
@@ -248,14 +245,14 @@ body {
 #cards-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   .card {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    padding: 10px;
+    margin: 0.6rem;
+    padding: 0.6rem;
     border: 1px solid #007dfe;
     border-radius: 10px;
     color: #ffffff;
@@ -303,6 +300,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
+    &:hover {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../../dist/img/renacer-web.JPG");
+    }
   }
   .starwars {
     padding: 4rem;
@@ -312,6 +313,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
+    &:hover {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../../dist/img/star-wars-web.JPG");
+    }
   }
   .importexp {
     padding: 8rem;
@@ -321,6 +326,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
+    &:hover {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../../dist/img/importexp-web.jpg");
+    }
   }
   .javana {
     padding: 8rem;
@@ -330,5 +339,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
+    &:hover {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../../dist/img/confecciones-javana-web.jpg");
+    }
   }
 }
