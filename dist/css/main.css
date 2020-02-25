@@ -213,6 +213,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  margin: 1.5rem;
 }
 #cards-container .card {
   display: flex;
@@ -302,6 +303,21 @@ body {
 }
 #cards-container .javana:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../dist/img/confecciones-javana-web.jpg");
+}
+
+#skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  height: 100vh;
+}
+#skills-container .skill {
+  margin: 1rem;
+  padding: 0;
+}
+#skills-container .skill .skill-image {
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */

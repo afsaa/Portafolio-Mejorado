@@ -247,6 +247,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  margin: 1.5rem;
   .card {
     display: flex;
     justify-content: center;
@@ -342,6 +343,22 @@ body {
     &:hover {
       background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
         url("../../dist/img/confecciones-javana-web.jpg");
+    }
+  }
+}
+
+// Habilidades
+#skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  height: 100vh;
+  & .skill {
+    margin: 1rem;
+    padding: 0;
+    & .skill-image {
+      border-radius: 50%;
     }
   }
 }
