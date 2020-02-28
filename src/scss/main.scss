@@ -296,53 +296,53 @@ body {
   .renacer {
     padding: 3.8rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../../dist/img/renacer-web.JPG");
+      url("../img/renacer-web.JPG");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
     &:hover {
       background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../../dist/img/renacer-web.JPG");
+        url("../img/renacer-web.JPG");
     }
   }
   .starwars {
     padding: 4rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../../dist/img/star-wars-web.JPG");
+      url("../img/star-wars-web.JPG");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
     &:hover {
       background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../../dist/img/star-wars-web.JPG");
+        url("../img/star-wars-web.JPG");
     }
   }
   .importexp {
     padding: 8rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../../dist/img/importexp-web.jpg");
+      url("../img/importexp-web.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
     &:hover {
       background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../../dist/img/importexp-web.jpg");
+        url("../img/importexp-web.jpg");
     }
   }
   .javana {
     padding: 8rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../../dist/img/confecciones-javana-web.jpg");
+      url("../img/confecciones-javana-web.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
     &:hover {
       background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../../dist/img/confecciones-javana-web.jpg");
+        url("../img/confecciones-javana-web.jpg");
     }
   }
 }
