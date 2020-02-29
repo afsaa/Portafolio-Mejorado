@@ -1,5 +1,4 @@
-#Hero,
-#menu {
+#Hero, #menu {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -9,6 +8,14 @@
   position: absolute;
   bottom: 85%;
   border: solid 2px;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.page-description {
+  text-align: center;
 }
 
 body {
@@ -145,7 +152,7 @@ body {
 }
 .Grid_Container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 #Retrato {
@@ -168,7 +175,10 @@ body {
 }
 
 #Mi_Historia {
-  margin: 10px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   text-align: center;
 }
 
@@ -202,11 +212,6 @@ body {
   opacity: 0.8;
   background-color: #000000;
   color: #ffffff;
-}
-
-#page-title {
-  text-transform: uppercase;
-  text-align: center;
 }
 
 #cards-container {
@@ -263,69 +268,74 @@ body {
 }
 #cards-container .renacer {
   padding: 3.8rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/renacer-web.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/renacer-web.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
 }
 #cards-container .renacer:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../img/renacer-web.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/renacer-web.JPG");
 }
 #cards-container .starwars {
   padding: 4rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/star-wars-web.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/star-wars-web.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
 }
 #cards-container .starwars:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../img/star-wars-web.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/star-wars-web.JPG");
 }
 #cards-container .importexp {
   padding: 8rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/importexp-web.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/importexp-web.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
 }
 #cards-container .importexp:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../img/importexp-web.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/importexp-web.jpg");
 }
 #cards-container .javana {
   padding: 8rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/confecciones-javana-web.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/confecciones-javana-web.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
 }
 #cards-container .javana:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../img/confecciones-javana-web.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/confecciones-javana-web.jpg");
 }
 
 #skills-container {
   display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+#skills-container .skill {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  padding: 1rem;
+}
+
+#tools-container {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  height: 100vh;
 }
-#skills-container .skill {
+#tools-container .tool {
   margin: 1rem;
   padding: 0;
 }
-#skills-container .skill .skill-image {
+#tools-container .tool .tool-title {
+  text-align: center;
+}
+#tools-container .tool .tool-image {
   border-radius: 50%;
 }
 

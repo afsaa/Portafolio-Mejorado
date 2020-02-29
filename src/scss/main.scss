@@ -17,6 +17,14 @@ $text-primary: #000000;
   border: solid 2px;
 }
 
+.page-title {
+  text-align: center;
+}
+
+.page-description {
+  text-align: center;
+}
+
 // Página Principal
 body {
   height: 100vh;
@@ -168,7 +176,7 @@ body {
 // Página Mi Historia
 %grid-element2x2 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 %center_vertically_horizontally {
@@ -193,7 +201,10 @@ body {
 }
 
 #Mi_Historia {
-  margin: 10px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   text-align: center;
 }
 
@@ -237,11 +248,6 @@ body {
 }
 
 //Pagina Proyectos
-#page-title {
-  text-transform: uppercase;
-  text-align: center;
-}
-
 #cards-container {
   display: flex;
   flex-flow: row wrap;
@@ -347,17 +353,29 @@ body {
   }
 }
 
-// Habilidades
+// Habilidades y Herramientas
 #skills-container {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  & .skill {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding: 1rem;
+  }
+}
+#tools-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  height: 100vh;
-  & .skill {
+  & .tool {
     margin: 1rem;
     padding: 0;
-    & .skill-image {
+    & .tool-title {
+      text-align: center;
+    }
+    & .tool-image {
       border-radius: 50%;
     }
   }
