@@ -10,6 +10,26 @@
   border: solid 2px;
 }
 
+@keyframes load {
+  from {
+    width: 0%;
+  }
+}
+@-webkit-keyframes load {
+  from {
+    width: 0%;
+  }
+}
+@-moz-keyframes load {
+  from {
+    width: 0%;
+  }
+}
+@-o-keyframes load {
+  from {
+    width: 0%;
+  }
+}
 .page-title {
   text-align: center;
 }
@@ -325,22 +345,66 @@ body {
   border-radius: 10px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
+#skills-container .skill .skill-title {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  text-align: center;
+  border-bottom: 2px solid #007dfe;
+}
 
 #tools-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 #tools-container .tool {
-  margin: 1rem;
+  width: -webkit-fill-available;
+  margin-left: 7rem;
+  margin-right: 7rem;
   padding: 0;
 }
-#tools-container .tool .tool-title {
-  text-align: center;
+#tools-container .tool .tool-bar {
+  background-color: #eee;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-#tools-container .tool .tool-image {
-  border-radius: 50%;
+#tools-container .tool .tool-bar::before {
+  content: attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+#tools-container .tool .tool-bar.front::before {
+  background-color: #007dfe;
+}
+#tools-container .tool .tool-bar.back::before {
+  background-color: #1b2e35;
+}
+#tools-container .tool .tool-bar.learning::before {
+  width: calc(20% - 10px);
+}
+#tools-container .tool .tool-bar.basic::before {
+  width: calc(40% - 10px);
+}
+#tools-container .tool .tool-bar.intermediate::before {
+  width: calc(60% - 10px);
+}
+#tools-container .tool .tool-bar.advanced::before {
+  width: calc(80% - 10px);
+}
+#tools-container .tool .tool-bar.expert::before {
+  width: calc(100% - 10px);
 }
 
 /*# sourceMappingURL=main.css.map */
