@@ -356,12 +356,16 @@ body {
 // Habilidades y Herramientas
 #skills-container {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-items: stretch;
   flex-flow: row wrap;
   & .skill {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    width: 33%;
+    margin: 2.5rem;
     padding: 1rem;
+    border: 1px solid $primary-color;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
   }
 }
 #tools-container {
