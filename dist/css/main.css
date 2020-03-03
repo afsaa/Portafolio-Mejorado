@@ -170,36 +170,40 @@ body {
     color: #ffffff;
   }
 }
-.Grid_Container {
+#main-section {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
 }
 
-#Retrato {
+#main-section .portrait-section {
   align-self: center;
   justify-self: center;
 }
 
-.Grid_Container {
+#main-section {
   animation: history-page-anim 2s ease-in;
 }
-
-#Retrato {
+#main-section .portrait-section {
   animation: flip-image 2s ease-in;
 }
-#Retrato img {
+#main-section .portrait-section .portrait-image {
   width: 100%;
-  height: fit-content;
   border: 2px solid black;
   border-radius: 50%;
 }
-
-#Mi_Historia {
+#main-section .my-story {
   margin-left: 5rem;
   margin-right: 5rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   text-align: center;
+}
+#main-section .my-story .my-story-title {
+  color: #1b2e35;
+}
+#main-section .my-story .my-story-subtitle3 {
+  color: #007dfe;
+  opacity: 0.8;
 }
 
 @keyframes history-page-anim {
@@ -227,11 +231,16 @@ body {
   align-self: stretch;
   justify-self: center;
   align-content: center;
-  border: 2px solid #007dfe;
+  border: 1px solid #1b2e35;
   border-radius: 15px;
-  opacity: 0.8;
-  background-color: #000000;
-  color: #ffffff;
+  color: black;
+}
+#experiences .experience .exp-title {
+  font-weight: bold;
+}
+#experiences .experience .exp-subtitle {
+  font-weight: lighter;
+  opacity: 0.6;
 }
 
 #cards-container {
@@ -287,9 +296,11 @@ body {
   background-color: #ffffff;
 }
 #cards-container .renacer {
-  padding: 3.8rem;
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/renacer-web.JPG");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
@@ -298,9 +309,11 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/renacer-web.JPG");
 }
 #cards-container .starwars {
-  padding: 4rem;
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/star-wars-web.JPG");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
@@ -309,9 +322,11 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/star-wars-web.JPG");
 }
 #cards-container .importexp {
-  padding: 8rem;
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/importexp-web.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
@@ -320,9 +335,11 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/importexp-web.jpg");
 }
 #cards-container .javana {
-  padding: 8rem;
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/confecciones-javana-web.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;

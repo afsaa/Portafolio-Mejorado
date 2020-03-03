@@ -206,28 +206,33 @@ body {
   justify-self: center;
 }
 
-.Grid_Container {
+#main-section {
   @extend %grid-element2x2;
   animation: history-page-anim 2s ease-in;
-}
 
-#Retrato {
-  @extend %center_vertically_horizontally;
-  animation: flip-image 2s ease-in;
-  img {
-    width: 100%;
-    height: fit-content;
-    border: 2px solid black;
-    border-radius: 50%;
+  & .portrait-section {
+    @extend %center_vertically_horizontally;
+    animation: flip-image 2s ease-in;
+    & .portrait-image {
+      width: 100%;
+      border: 2px solid black;
+      border-radius: 50%;
+    }
   }
-}
-
-#Mi_Historia {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  text-align: center;
+  & .my-story {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    text-align: center;
+    & .my-story-title {
+      color: $secondary-color;
+    }
+    & .my-story-subtitle3 {
+      color: $primary-color;
+      opacity: 0.8;
+    }
+  }
 }
 
 @keyframes history-page-anim {
@@ -261,11 +266,18 @@ body {
     align-self: stretch;
     justify-self: center;
     align-content: center;
-    border: 2px solid #007dfe;
+    border: 1px solid $secondary-color;
     border-radius: 15px;
-    opacity: 0.8;
-    background-color: #000000;
-    color: #ffffff;
+    // background-color: #000000;
+    color: black;
+    // color: #ffffff;
+    .exp-title {
+      font-weight: bold;
+    }
+    .exp-subtitle {
+      font-weight: lighter;
+      opacity: 0.6;
+    }
   }
 }
 
@@ -322,10 +334,12 @@ body {
     }
   }
   .renacer {
-    padding: 3.8rem;
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../img/renacer-web.JPG");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
@@ -335,10 +349,12 @@ body {
     }
   }
   .starwars {
-    padding: 4rem;
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../img/star-wars-web.JPG");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
@@ -348,10 +364,12 @@ body {
     }
   }
   .importexp {
-    padding: 8rem;
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../img/importexp-web.jpg");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
@@ -361,10 +379,12 @@ body {
     }
   }
   .javana {
-    padding: 8rem;
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../img/confecciones-javana-web.jpg");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
