@@ -92,43 +92,37 @@ body {
 }
 
 #Hero {
-  margin-top: 1rem;
   text-align: center;
 }
-
-#Hero_Image img {
+#Hero .hero-image {
   width: 100%;
 }
-
-#Hero_Text #Nombres {
+#Hero .hero-text .title-name {
   font-size: 2.5rem;
 }
-#Hero_Text #Apellidos {
+#Hero .hero-text .title-lastname {
   color: #007dfe;
   font-size: 2.5rem;
 }
-#Hero_Text #Titular {
+#Hero .hero-text .titular {
   color: #1b2e35;
   font-size: 2.5rem;
 }
-
-.frontend-text {
+#Hero .hero-text .frontend-text {
   color: #007dfe;
 }
-
-.backend-text {
+#Hero .hero-text .backend-text {
   color: #1b2e35;
 }
 
 #Footer {
   text-align: center;
 }
-#Footer a img {
+#Footer .social-image {
   width: 50px;
   height: 50px;
 }
-
-#Footer_Copy {
+#Footer .footer-copyright {
   width: 100%;
   text-align: center;
   color: #000000;

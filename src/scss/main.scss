@@ -108,51 +108,43 @@ body {
 
 #Hero {
   @extend %flex-element;
-  margin-top: 1rem;
   text-align: center;
-}
-
-#Hero_Image {
-  img {
+  & .hero-image {
     width: 100%;
   }
-}
-
-#Hero_Text {
-  #Nombres {
-    font-size: 2.5rem;
+  & .hero-text {
+    & .title-name {
+      font-size: 2.5rem;
+    }
+    & .title-lastname {
+      color: $primary-color;
+      font-size: 2.5rem;
+    }
+    & .titular {
+      color: $secondary-color;
+      font-size: 2.5rem;
+    }
+    & .frontend-text {
+      color: $primary-color;
+    }
+    & .backend-text {
+      color: $secondary-color;
+    }
   }
-  #Apellidos {
-    color: $primary-color;
-    font-size: 2.5rem;
-  }
-  #Titular {
-    color: $secondary-color;
-    font-size: 2.5rem;
-  }
-}
-
-.frontend-text {
-  color: $primary-color;
-}
-
-.backend-text {
-  color: $secondary-color;
 }
 
 #Footer {
   text-align: center;
-  a img {
+  & .social-image {
     width: 50px;
     height: 50px;
   }
-}
-
-#Footer_Copy {
-  width: 100%;
-  text-align: center;
-  color: $text-primary;
-  font-weight: bold;
+  & .footer-copyright {
+    width: 100%;
+    text-align: center;
+    color: $text-primary;
+    font-weight: bold;
+  }
 }
 
 .cambio-lenguaje {
