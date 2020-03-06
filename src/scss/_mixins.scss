@@ -1,0 +1,15 @@
+@mixin project-image-bg($image-url) {
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url($image-url);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+  &:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url($image-url);
+  }
+}

@@ -1,5 +1,6 @@
 @import "../../node_modules/@material/animation/variables";
 @import "../../node_modules/@material/animation/functions";
+@import "mixins";
 
 $primary-color: #007dfe;
 $secondary-color: #1b2e35;
@@ -295,7 +296,7 @@ body {
     .card-layout {
       text-align: center;
       background: transparent;
-      & h2 {
+      h2 {
         margin: 10px;
         color: #ffffff;
       }
@@ -326,64 +327,16 @@ body {
     }
   }
   .renacer {
-    width: 100%;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/renacer-web.JPG");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #000000;
-    &:hover {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../img/renacer-web.JPG");
-    }
+    @include project-image-bg("../img/renacer-web.JPG");
   }
   .starwars {
-    width: 100%;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/star-wars-web.JPG");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #000000;
-    &:hover {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../img/star-wars-web.JPG");
-    }
+    @include project-image-bg("../img/star-wars-web.JPG");
   }
   .importexp {
-    width: 100%;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/importexp-web.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #000000;
-    &:hover {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../img/importexp-web.jpg");
-    }
+    @include project-image-bg("../img/importexp-web.jpg");
   }
   .javana {
-    width: 100%;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/confecciones-javana-web.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #000000;
-    &:hover {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../img/confecciones-javana-web.jpg");
-    }
+    @include project-image-bg("../img/confecciones-javana-web.jpg");
   }
 }
 
