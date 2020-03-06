@@ -84,7 +84,7 @@ body {
   text-decoration: none;
   color: #000000;
 }
-#menu .nav-item .nav-link:hover {
+#menu .nav-item .nav-link :hover {
   border-bottom: #1b2e35 solid;
 }
 #menu .nav-item .nav-link.current {
