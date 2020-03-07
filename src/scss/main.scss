@@ -1,5 +1,6 @@
 @import "../../node_modules/@material/animation/variables";
 @import "../../node_modules/@material/animation/functions";
+@import "breakpoints";
 @import "mixins";
 
 $primary-color: #007dfe;
@@ -50,7 +51,6 @@ $text-primary: #000000;
 
 // Página Principal
 body {
-  height: 100vh;
   margin: 0;
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -61,6 +61,7 @@ body {
   height: 50px;
   margin: 0;
   padding: 0;
+  box-shadow: 4px 3px 11px 2px rgba(0, 0, 0, 0.2);
 
   &-branding a {
     font-size: 35px;
@@ -83,35 +84,86 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-
-  .nav-item {
-    display: inherit;
-    justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: $text-primary;
-    font-weight: bold;
-    .nav-link {
+    .nav-item {
       display: inherit;
-      align-items: center;
-      text-decoration: none;
+      justify-content: center;
+      margin-left: 10px;
+      margin-right: 10px;
       color: $text-primary;
-      :hover {
-        border-bottom: $secondary-color solid;
-      }
-      &.current {
-        border-bottom: #000 solid;
+      font-weight: bold;
+      .nav-link {
+        display: inherit;
+        align-items: center;
+        text-decoration: none;
+        color: $text-primary;
+        &:hover {
+          color: $primary-color;
+          transition: color 0.5s;
+        }
+        &.current {
+          color: $primary-color;
+        }
       }
     }
+    @include sm {
+      width: 50%;
+      display: block;
+      position: relative;
+      top: 130px;
+      left: 22%;
+      background-color: $secondary-color;
+      opacity: 0.8;
+      z-index: 1;
+      .nav-item {
+        margin-top: 1rem;
+        padding-bottom: 0.5rem;
+        z-index: 2;
+        .nav-link {
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .menu-container {
+    display: none;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 5px;
+    &:hover {
+      background-color: $secondary-color;
+      color: #ffffff;
+      transition: background-color 0.5s, color 0.5s;
+    }
+    &:active {
+      background-color: $secondary-color;
+      color: #ffffff;
+      transition: background-color 0.5s, color 0.5s;
+    }
+    @include sm {
+      display: inherit;
+    }
+  }
+
+  @include sm {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
   }
 }
 
 #Hero {
   @extend %flex-element;
   text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
   .hero-image {
     width: 100%;
+    height: 450px;
+    @include sm {
+      height: auto;
+    }
   }
   .hero-text {
     .title-name {
@@ -131,6 +183,12 @@ body {
     .backend-text {
       color: $secondary-color;
     }
+    @include sm {
+      margin-bottom: 2rem;
+    }
+  }
+  @include sm {
+    flex-flow: column wrap;
   }
 }
 
@@ -139,6 +197,10 @@ body {
   .social-image {
     width: 50px;
     height: 50px;
+    @include sm {
+      width: 40px;
+      height: 40px;
+    }
   }
   .footer-copyright {
     width: 100%;
