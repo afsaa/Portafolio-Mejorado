@@ -110,7 +110,7 @@ body {
       display: block;
       position: relative;
       top: 130px;
-      left: 22%;
+      left: 88%;
       background-color: $secondary-color;
       opacity: 0.8;
       z-index: 1;
@@ -123,20 +123,19 @@ body {
           color: #ffffff;
         }
       }
+      &.is-active {
+        left: 22%;
+        transition: left 0.5s;
+      }
     }
   }
 
-  .menu-container {
+  .burguer-menu {
     display: none;
     border: 1px solid #000000;
     border-radius: 25px;
     padding: 5px;
-    &:hover {
-      background-color: $secondary-color;
-      color: #ffffff;
-      transition: background-color 0.5s, color 0.5s;
-    }
-    &:active {
+    &.is-active {
       background-color: $secondary-color;
       color: #ffffff;
       transition: background-color 0.5s, color 0.5s;
