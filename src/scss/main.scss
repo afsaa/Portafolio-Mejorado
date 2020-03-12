@@ -465,6 +465,9 @@ p {
       text-align: justify;
     
     }
+    @include sm {
+      width: 100%;
+    }
   }
 }
 #tools-container {
@@ -521,5 +524,13 @@ p {
     .tool-bar.expert::before {
       width: calc(100% - 10px);
     }
+    @include sm {
+      margin: 0;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+  @include sm {
+    padding-bottom: 10%;
   }
 }

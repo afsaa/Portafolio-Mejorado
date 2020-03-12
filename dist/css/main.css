@@ -481,6 +481,11 @@ p {
 #skills-container .skill .skill-description {
   text-align: justify;
 }
+@media (max-width: 576px) {
+  #skills-container .skill {
+    width: 100%;
+  }
+}
 
 #tools-container {
   display: flex;
@@ -535,6 +540,18 @@ p {
 }
 #tools-container .tool .tool-bar.expert::before {
   width: calc(100% - 10px);
+}
+@media (max-width: 576px) {
+  #tools-container .tool {
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 576px) {
+  #tools-container {
+    padding-bottom: 10%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
