@@ -104,14 +104,15 @@ p {
 }
 @media (max-width: 576px) {
   #menu .menu-nav {
-    width: 50%;
+    width: 100%;
     display: block;
     position: relative;
-    top: 130px;
-    left: 88%;
+    top: 140px;
+    left: -350px;
     background-color: #1b2e35;
-    opacity: 0.8;
     z-index: 1;
+    opacity: 0;
+    transition: left 0.5s ease-out, opacity 1s ease-out;
   }
   #menu .menu-nav .nav-item {
     margin-top: 1rem;
@@ -123,8 +124,10 @@ p {
     color: #ffffff;
   }
   #menu .menu-nav.is-active {
-    left: 22%;
-    transition: left 0.5s;
+    display: block;
+    left: -92px;
+    opacity: 0.9;
+    transition: left 0.5s ease, opacity 1s;
   }
 }
 #menu .burguer-menu {

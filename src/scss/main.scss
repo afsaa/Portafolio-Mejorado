@@ -117,14 +117,15 @@ p {
       }
     }
     @include sm {
-      width: 50%;
+      width: 100%;
       display: block;
       position: relative;
-      top: 130px;
-      left: 88%;
+      top: 140px;
+      left: -350px;
       background-color: $secondary-color;
-      opacity: 0.8;
       z-index: 1;
+      opacity: 0;
+      transition: left 0.5s ease-out, opacity 1s ease-out;
       .nav-item {
         margin-top: 1rem;
         padding-bottom: 0.5rem;
@@ -135,8 +136,10 @@ p {
         }
       }
       &.is-active {
-        left: 22%;
-        transition: left 0.5s;
+        display: block;
+        left: -92px;
+        opacity: 0.9;
+        transition: left 0.5s ease, opacity 1s;
       }
     }
   }
