@@ -435,6 +435,10 @@ body {
   text-align: center;
   border-bottom: 2px solid #007dfe;
 }
+#skills-container .skill .skill-description {
+  text-align: justify;
+  line-height: 150%;
+}
 
 #tools-container {
   display: flex;

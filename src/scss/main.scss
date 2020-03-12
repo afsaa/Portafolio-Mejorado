@@ -420,6 +420,10 @@ body {
       text-align: center;
       border-bottom: 2px solid $primary-color;
     }
+    .skill-description {
+      text-align: justify;
+      line-height: 150%;
+    }
   }
 }
 #tools-container {
