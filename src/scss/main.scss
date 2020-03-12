@@ -252,7 +252,8 @@ body {
 // Página Mi Historia
 %grid-element2x2 {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
 }
 
 %center_vertically_horizontally {
@@ -262,6 +263,7 @@ body {
 
 #main-section {
   @extend %grid-element2x2;
+  margin-top: 1rem;
   animation: history-page-anim 2s ease-in;
 
   .portrait-section {
@@ -274,17 +276,15 @@ body {
     }
   }
   .my-story {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
     .my-story-title {
+      text-align: center;
       color: $secondary-color;
     }
-    .my-story-subtitle3 {
-      color: $primary-color;
-      opacity: 0.8;
+    .my-story-description {
+      text-align: justify;
+      line-height: 150%;
     }
   }
 }

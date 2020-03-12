@@ -239,7 +239,8 @@ body {
 }
 #main-section {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
 }
 
 #main-section .portrait-section {
@@ -248,6 +249,7 @@ body {
 }
 
 #main-section {
+  margin-top: 1rem;
   animation: history-page-anim 2s ease-in;
 }
 #main-section .portrait-section {
@@ -259,18 +261,16 @@ body {
   border-radius: 50%;
 }
 #main-section .my-story {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 #main-section .my-story .my-story-title {
+  text-align: center;
   color: #1b2e35;
 }
-#main-section .my-story .my-story-subtitle3 {
-  color: #007dfe;
-  opacity: 0.8;
+#main-section .my-story .my-story-description {
+  text-align: justify;
+  line-height: 150%;
 }
 
 @keyframes history-page-anim {
