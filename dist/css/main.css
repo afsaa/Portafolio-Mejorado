@@ -40,8 +40,19 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
   background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Halant", sans-serif;
+}
+
+a, p, .tool {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+p {
+  line-height: 200%;
 }
 
 #menu {
@@ -270,7 +281,6 @@ body {
 }
 #main-section .my-story .my-story-description {
   text-align: justify;
-  line-height: 150%;
 }
 
 @keyframes history-page-anim {
@@ -311,7 +321,6 @@ body {
 }
 #experiences .experience .exp-description {
   text-align: justify;
-  line-height: 150%;
 }
 
 #cards-container {
@@ -441,7 +450,6 @@ body {
 }
 #skills-container .skill .skill-description {
   text-align: justify;
-  line-height: 150%;
 }
 
 #tools-container {

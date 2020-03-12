@@ -49,12 +49,24 @@ $text-primary: #000000;
   text-align: center;
 }
 
-// Página Principal
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
   background-color: #ffffff;
 }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Halant", sans-serif;
+}
+
+a, p, .tool {
+  font-family: "Nunito Sans",sans-serif;
+}
+
+p {
+  line-height: 200%;
+}
+
+// Página Principal
 
 #menu {
   @extend %flex-element;
@@ -284,7 +296,7 @@ body {
     }
     .my-story-description {
       text-align: justify;
-      line-height: 150%;
+    
     }
   }
 }
@@ -334,7 +346,7 @@ body {
     }
     .exp-description {
       text-align: justify;
-      line-height: 150%;
+    
     }
   }
 }
@@ -426,7 +438,7 @@ body {
     }
     .skill-description {
       text-align: justify;
-      line-height: 150%;
+    
     }
   }
 }
