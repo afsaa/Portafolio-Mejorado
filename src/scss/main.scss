@@ -365,6 +365,14 @@ p {
     
     }
   }
+  @include sm {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+  }
 }
 
 //Pagina Proyectos
