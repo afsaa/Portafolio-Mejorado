@@ -193,6 +193,7 @@ p {
 }
 @media (max-width: 576px) {
   #Hero {
+    padding-top: 12%;
     flex-flow: column wrap;
   }
 }
@@ -288,6 +289,15 @@ p {
 }
 #main-section .my-story .my-story-description {
   text-align: justify;
+}
+@media (max-width: 576px) {
+  #main-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 @keyframes history-page-anim {
