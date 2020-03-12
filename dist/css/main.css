@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5 {
   font-family: "Halant", sans-serif;
 }
 
-a, p, .tool {
+a, p, .tool, .footer-copyright {
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -153,8 +153,9 @@ p {
 
 #Hero {
   text-align: center;
-  margin-top: 1rem;
-  padding: 1rem;
+  padding-top: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 #Hero .hero-image {
   width: 100%;
@@ -260,7 +261,10 @@ p {
 }
 
 #main-section {
-  margin-top: 1rem;
+  align-content: center;
+  padding-top: 8%;
+  padding-left: 15%;
+  padding-right: 15%;
   animation: history-page-anim 2s ease-in;
 }
 #main-section .portrait-section {
@@ -299,12 +303,14 @@ p {
 #experiences {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin: 10px;
+  grid-gap: 15px;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 #experiences .experience {
   width: 90%;
-  padding: 10px;
+  padding: 15px;
   align-self: stretch;
   justify-self: center;
   align-content: center;
