@@ -43,11 +43,18 @@ body {
   background-color: #ffffff;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Halant", sans-serif;
 }
 
-a, p, .tool, .footer-copyright {
+a,
+p,
+.tool,
+.footer-copyright {
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -109,7 +116,7 @@ p {
     position: relative;
     top: 140px;
     left: -350px;
-    background-color: #1b2e35;
+    background-color: #2f3945;
     z-index: 1;
     opacity: 0;
     transition: left 0.5s ease-out, opacity 1s ease-out;
@@ -135,9 +142,10 @@ p {
   border: 1px solid #000000;
   border-radius: 25px;
   padding: 5px;
+  cursor: pointer;
 }
 #menu .burguer-menu.is-active {
-  background-color: #1b2e35;
+  background-color: #2f3945;
   color: #ffffff;
   transition: background-color 0.5s, color 0.5s;
 }
@@ -156,7 +164,7 @@ p {
 
 #Hero {
   text-align: center;
-  padding-top: 8%;
+  padding-top: 2.5%;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -177,14 +185,14 @@ p {
   font-size: 2.5rem;
 }
 #Hero .hero-text .titular {
-  color: #1b2e35;
+  color: #2f3945;
   font-size: 2.5rem;
 }
 #Hero .hero-text .frontend-text {
   color: #007dfe;
 }
 #Hero .hero-text .backend-text {
-  color: #1b2e35;
+  color: #2f3945;
 }
 @media (max-width: 576px) {
   #Hero .hero-text {
@@ -266,9 +274,10 @@ p {
 
 #main-section {
   align-content: center;
-  padding-top: 8%;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-top: 2.5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2.5%;
   animation: history-page-anim 2s ease-in;
 }
 #main-section .portrait-section {
@@ -285,7 +294,7 @@ p {
 }
 #main-section .my-story .my-story-title {
   text-align: center;
-  color: #1b2e35;
+  color: #2f3945;
 }
 #main-section .my-story .my-story-description {
   text-align: justify;
@@ -318,9 +327,10 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 15px;
-  padding-top: 5%;
+  padding-top: 2.5%;
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 2.5%;
 }
 #experiences .experience {
   width: 90%;
@@ -328,7 +338,7 @@ p {
   align-self: stretch;
   justify-self: center;
   align-content: center;
-  border: 1px solid #1b2e35;
+  border: 1px solid #2f3945;
   border-radius: 15px;
   color: black;
 }
@@ -341,6 +351,11 @@ p {
 }
 #experiences .experience .exp-description {
   text-align: justify;
+}
+#experiences :nth-child(3) {
+  width: 95%;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 @media (max-width: 576px) {
   #experiences {
@@ -525,7 +540,7 @@ p {
   background-color: #007dfe;
 }
 #tools-container .tool .tool-bar.back::before {
-  background-color: #1b2e35;
+  background-color: #2f3945;
 }
 #tools-container .tool .tool-bar.learning::before {
   width: calc(20% - 10px);
