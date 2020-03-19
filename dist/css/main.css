@@ -352,6 +352,13 @@ p {
 #experiences .experience .exp-description {
   text-align: justify;
 }
+@media (max-width: 576px) {
+  #experiences .experience {
+    width: 95%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
 #experiences :nth-child(3) {
   width: 95%;
   grid-column-start: 1;
@@ -365,6 +372,8 @@ p {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 10%;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 
