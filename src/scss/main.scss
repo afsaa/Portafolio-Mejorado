@@ -454,6 +454,10 @@ p {
   .javana {
     @include project-image-bg("../img/confecciones-javana-web.jpg");
   }
+  @include sm {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 // Habilidades y Herramientas

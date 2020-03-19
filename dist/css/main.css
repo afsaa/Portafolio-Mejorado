@@ -473,6 +473,12 @@ p {
 #cards-container .javana:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/confecciones-javana-web.jpg");
 }
+@media (max-width: 576px) {
+  #cards-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
 
 #skills-container {
   display: flex;
