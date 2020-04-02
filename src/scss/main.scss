@@ -449,6 +449,9 @@ p {
       }
     }
   }
+  .green-road {
+    @include project-image-bg("../img/green-road-web.JPG");
+  }
   .renacer {
     @include project-image-bg("../img/renacer-web.JPG");
   }

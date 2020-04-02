@@ -430,6 +430,19 @@ p {
   color: #000000;
   background-color: #ffffff;
 }
+#cards-container .green-road {
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/green-road-web.JPG");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+}
+#cards-container .green-road:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/green-road-web.JPG");
+}
 #cards-container .renacer {
   width: 100%;
   padding-top: 8rem;
