@@ -434,66 +434,66 @@ p {
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/green-road-web.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/green-road-web.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
 }
 #cards-container .green-road:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/green-road-web.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/green-road-web.webp");
 }
 #cards-container .renacer {
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/renacer-web.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/renacer-web.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
 }
 #cards-container .renacer:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/renacer-web.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/renacer-web.webp");
 }
 #cards-container .starwars {
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/star-wars-web.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/star-wars-web.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
 }
 #cards-container .starwars:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/star-wars-web.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/star-wars-web.webp");
 }
 #cards-container .importexp {
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/importexp-web.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/importexp-web.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
 }
 #cards-container .importexp:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/importexp-web.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/importexp-web.webp");
 }
 #cards-container .javana {
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/confecciones-javana-web.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/confecciones-javana-web.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
 }
 #cards-container .javana:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/confecciones-javana-web.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/confecciones-javana-web.webp");
 }
 @media (max-width: 576px) {
   #cards-container {
