@@ -450,19 +450,19 @@ p {
     }
   }
   .green-road {
-    @include project-image-bg("../img/green-road-web.JPG");
+    @include project-image-bg("../img/green-road-web.webp");
   }
   .renacer {
-    @include project-image-bg("../img/renacer-web.JPG");
+    @include project-image-bg("../img/renacer-web.webp");
   }
   .starwars {
-    @include project-image-bg("../img/star-wars-web.JPG");
+    @include project-image-bg("../img/star-wars-web.webp");
   }
   .importexp {
-    @include project-image-bg("../img/importexp-web.jpg");
+    @include project-image-bg("../img/importexp-web.webp");
   }
   .javana {
-    @include project-image-bg("../img/confecciones-javana-web.jpg");
+    @include project-image-bg("../img/confecciones-javana-web.webp");
   }
   @include sm {
     padding-left: 5%;
