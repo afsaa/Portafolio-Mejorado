@@ -10,3 +10,24 @@ const handleMenu = () => {
 };
 
 burguerMenu.addEventListener("click", handleMenu, false);
+
+// Fetching latest posts
+const post = document.querySelector("#post");
+fetch(
+  "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@andresfernandosaa"
+)
+  .then((res) => {
+    return res.json();
+  })
+  .then(({ items, status }) => {
+    if (status === "ok") {
+      let postLink = document.querySelectorAll("#latest-posts > a");
+      let postTitle = document.querySelectorAll(".post-title");
+      let postThumbnail = document.querySelectorAll(".post-thumbnail");
+      for (let i = 0; i < items.length; i++) {
+        postLink[i].href = items[i].link;
+        postTitle[i].innerHTML = items[i].title;
+        postThumbnail[i].src = items[i].thumbnail;
+      }
+    }
+  });
