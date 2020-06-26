@@ -51,6 +51,10 @@ h5 {
   font-family: "Halant", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 a,
 p,
 .tool,
@@ -204,6 +208,45 @@ p {
     padding-top: 12%;
     flex-flow: column wrap;
   }
+}
+
+#latest-posts {
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  margin: 10px 20px;
+}
+#latest-posts .post-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  opacity: 1;
+  color: #000000;
+  border: 1px #000000 solid;
+  border-radius: 10px;
+  margin: 0px 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 1s, color 1s, opacity 1s;
+}
+#latest-posts .post-item:hover {
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 0.8;
+}
+#latest-posts .post {
+  position: relative;
+}
+#latest-posts .post > figure {
+  margin: 0;
+}
+#latest-posts .post-title {
+  text-align: center;
+}
+#latest-posts .post-thumbnail {
+  width: 200px;
+  height: auto;
 }
 
 #Footer {
