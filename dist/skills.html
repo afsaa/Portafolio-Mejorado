@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Aquí está contenida parte de mi historia, mejores proyectos que llamo MVPs (Most Valuable Projects), habilidades técnicas y blandas, entre otros."
+      content="Aquí está contenida parte de mi historia, mejores proyectos que llamo MVPs (Most Valuable Projects), experiencia, habilidades técnicas y blandas, entre otros."
     />
-    <meta name="keywords" content="Web Developer, Frontend, Backend" />
+    <meta name="keywords" content="Desarrollador web, Frontend, Backend" />
     <meta name="author" content="Andrés Fernando Saa" />
+    <meta name="robots" content="index,follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -23,37 +24,37 @@
     <title>Habilidades</title>
   </head>
   <body>
-    <nav id="menu">
-      <div id="menu-branding">
-        <a href="./index.html" class="nav-link">SAA</a>
-      </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="./about.html" class="nav-link">Sobre Mi</a>
-        </li>
-        <li class="nav-item">
-          <a href="./exp.html" class="nav-link">Experiencia</a>
-        </li>
-        <li class="nav-item">
-          <a href="./projects.html" class="nav-link">Proyectos</a>
-        </li>
-        <li class="nav-item">
-          <a href="./skills.html" class="nav-link current">Habilidades</a>
-        </li>
-      </ul>
-      <div class="burguer-menu">
-        <i class="material-icons">
-          menu
-        </i>
-      </div>
-    </nav>
+    <header>
+      <nav id="menu">
+        <div id="menu-branding">
+          <a href="./index.html" class="nav-link">SAA</a>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">Sobre Mi</a>
+          </li>
+          <li class="nav-item">
+            <a href="./exp.html" class="nav-link">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a href="./projects.html" class="nav-link">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a href="./skills.html" class="nav-link current">Habilidades</a>
+          </li>
+        </ul>
+        <div class="burguer-menu">
+          <i class="material-icons"> menu </i>
+        </div>
+      </nav>
+    </header>
     <h1 class="page-title">Habilidades y Herramientas Principales</h1>
     <h3 class="page-description">
       Gracias a mis experiencias y a traves de la creación de proyectos he
       desarrollado habilidades invaluables.
     </h3>
-    <div id="skills-container">
-      <div class="skill">
+    <main id="skills-container">
+      <article class="skill">
         <h3 class="skill-title">Flexibilidad y Adaptabilidad</h3>
         <p class="skill-description">
           He realizado proyectos con diversos lenguajes como C++, Python,
@@ -67,16 +68,16 @@
             una mentalidad de mejora continua.</strong
           >
         </p>
-      </div>
-      <div class="skill">
+      </article>
+      <article class="skill">
         <h3 class="skill-title">Resolución de problemas</h3>
         <p class="skill-description">
           Mi dominio en el idioma inglés me brinda una ventaja competitiva al
           leer y entender documentaciones, código y comentarios importantes de
           las librerías utilizadas.
         </p>
-      </div>
-      <div class="skill">
+      </article>
+      <article class="skill">
         <h3 class="skill-title">Trabajo en Equipo</h3>
         <p class="skill-description">
           Desde la universidad considero que me he perfilado como un lider a
@@ -93,8 +94,8 @@
             por mejorar.</strong
           >
         </p>
-      </div>
-      <div class="skill">
+      </article>
+      <article class="skill">
         <h3 class="skill-title">Empatía</h3>
         <p class="skill-description">
           La experiencia de usuario se está convirtiendo en algo primordial para
@@ -108,9 +109,9 @@
             única.</strong
           >
         </p>
-      </div>
-    </div>
-    <div id="tools-container">
+      </article>
+    </main>
+    <section id="tools-container">
       <div class="tool">
         <div class="tool-bar front intermediate" data-skill="ReactJS"></div>
       </div>
@@ -129,7 +130,7 @@
       <div class="tool">
         <div class="tool-bar back basic" data-skill="SQL"></div>
       </div>
-    </div>
+    </section>
     <script src="./js/main.js"></script>
   </body>
 </html>

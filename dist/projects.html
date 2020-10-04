@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Aquí está contenida parte de mi historia, mejores proyectos que llamo MVPs (Most Valuable Projects), habilidades técnicas y blandas, entre otros."
+      content="Aquí está contenida parte de mi historia, mejores proyectos que llamo MVPs (Most Valuable Projects), experiencia, habilidades técnicas y blandas, entre otros."
     />
-    <meta name="keywords" content="Web Developer, Frontend, Backend" />
+    <meta name="keywords" content="Desarrollador web, Frontend, Backend" />
     <meta name="author" content="Andrés Fernando Saa" />
+    <meta name="robots" content="index,follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -23,187 +24,168 @@
     <title>Mis mejores proyectos!</title>
   </head>
   <body>
-    <nav id="menu">
-      <div id="menu-branding">
-        <a href="./index.html" class="nav-link">SAA</a>
-      </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="./about.html" class="nav-link">Sobre Mi</a>
-        </li>
-        <li class="nav-item">
-          <a href="./exp.html" class="nav-link">Experiencia</a>
-        </li>
-        <li class="nav-item">
-          <a href="./projects.html" class="nav-link current">Proyectos</a>
-        </li>
-        <li class="nav-item">
-          <a href="./skills.html" class="nav-link">Habilidades</a>
-        </li>
-      </ul>
-      <div class="burguer-menu">
-        <i class="material-icons">
-          menu
-        </i>
-      </div>
-    </nav>
+    <header>
+      <nav id="menu">
+        <div id="menu-branding">
+          <a href="./index.html" class="nav-link">SAA</a>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">Sobre Mi</a>
+          </li>
+          <li class="nav-item">
+            <a href="./exp.html" class="nav-link">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a href="./projects.html" class="nav-link current">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a href="./skills.html" class="nav-link">Habilidades</a>
+          </li>
+        </ul>
+        <div class="burguer-menu">
+          <i class="material-icons"> menu </i>
+        </div>
+      </nav>
+    </header>
     <h1 class="page-title">Te Presento Mis Mejores Proyectos</h1>
-    <div id="cards-container">
-      <div class="card green-road">
-        <img
-          src="./img/green-road-smartphone.webp"
-          loading="lazy"
-          alt="Proyecto Green Road"
-          class="card-img"
-        />
-        <div class="card-layout">
+    <main id="cards-container">
+      <section class="card green-road">
+        <figure>
+          <img
+            src="./img/green-road-smartphone.webp"
+            loading="lazy"
+            alt="Proyecto Green Road"
+            class="card-img"
+          />
+        </figure>
+        <article class="card-layout">
           <h2>Green Road</h2>
           <a
             class="card-link"
             href="https://green-road.herokuapp.com/"
             target="_blank"
             rel="noopener"
-            ><i class="material-icons">
-              remove_red_eye
-            </i>
-            Mira el proyecto en vivo!</a
+            ><i class="material-icons"> remove_red_eye </i> Mira el proyecto en
+            vivo!</a
           >
           <a
             class="card-link"
             href="https://github.com/afsaa/Transporte"
             target="_blank"
             rel="noopener"
-            ><i class="material-icons">
-              code
-            </i>
-            Mira el código</a
+            ><i class="material-icons"> code </i> Mira el código</a
           >
-        </div>
-      </div>
-      <div class="card renacer">
-        <img
-          src="./img/renacer-smartphone.webp"
-          loading="lazy"
-          alt="Proyecto Psico Renacer"
-          class="card-img"
-        />
-        <div class="card-layout">
+        </article>
+      </section>
+      <section class="card renacer">
+        <figure>
+          <img
+            src="./img/renacer-smartphone.webp"
+            loading="lazy"
+            alt="Proyecto Psico Renacer"
+            class="card-img"
+          />
+        </figure>
+        <article class="card-layout">
           <h2>Centro Psicoterapéutico Renacer</h2>
           <a
             class="card-link"
             href="https://awesome-pare-6129b2.netlify.com/"
             target="_blank"
             rel="noopener"
-            ><i class="material-icons">
-              remove_red_eye
-            </i>
-            Mira el proyecto en vivo!</a
+            ><i class="material-icons"> remove_red_eye </i> Mira el proyecto en
+            vivo!</a
           >
           <a
             class="card-link"
             href="https://github.com/afsaa/Frontend-Renacer"
             target="_blank"
             rel="noopener"
-            ><i class="material-icons">
-              code
-            </i>
-            Mira el código</a
+            ><i class="material-icons"> code </i> Mira el código</a
           >
-        </div>
-      </div>
-      <div class="card starwars">
-        <img
-          src="./img/star-wars-smartphone.webp"
-          loading="lazy"
-          alt="Proyecto Star Wars Characters"
-          class="card-img"
-        />
-        <div class="card-layout">
+        </article>
+      </section>
+      <section class="card starwars">
+        <figure>
+          <img
+            src="./img/star-wars-smartphone.webp"
+            loading="lazy"
+            alt="Proyecto Star Wars Characters"
+            class="card-img"
+          />
+        </figure>
+        <article class="card-layout">
           <h2>Star Wars Characters</h2>
           <a
             class="card-link"
             href="https://ecstatic-elion-7a633d.netlify.com/"
             target="_blank"
             rel="noopener"
-            ><i class="material-icons">
-              remove_red_eye
-            </i>
-            Mira el proyecto en vivo!</a
+            ><i class="material-icons"> remove_red_eye </i> Mira el proyecto en
+            vivo!</a
           >
           <a
             class="card-link"
             href="https://github.com/afsaa/StarWars-Characters"
             target="_blank"
             rel="noopener"
-            ><i class="material-icons">
-              code
-            </i>
-            Mira el código</a
+            ><i class="material-icons"> code </i> Mira el código</a
           >
-        </div>
-      </div>
-      <div class="card importexp">
+        </article>
+      </section>
+      <section class="card importexp">
         <!--<img
           src="./img/importexp-web.jpg"
           alt="Proyecto Importexp"
           class="card-img"
         />-->
-        <div class="card-layout">
+        <article class="card-layout">
           <h2>Importexp</h2>
           <a
             class="card-link"
             href="https://afsaa.github.io/ImportExp/"
             target="_blank"
             rel="noopener"
-            ><i class="material-icons">
-              remove_red_eye
-            </i>
-            Mira el proyecto en vivo!</a
+            ><i class="material-icons"> remove_red_eye </i> Mira el proyecto en
+            vivo!</a
           >
           <a
             class="card-link"
             href="https://github.com/afsaa/ImportExp"
             target="_blank"
             rel="noopener"
-            ><i class="material-icons">
-              code
-            </i>
-            Mira el código</a
+            ><i class="material-icons"> code </i> Mira el código</a
           >
-        </div>
-      </div>
-      <div class="card javana">
+        </article>
+      </section>
+      <section class="card javana">
         <!--<div class="card-img">
           <img
             src="./img/confecciones-javana-web.jpg"
             alt="Proyecto Confecciones Javana"
           />
         </div>-->
-        <div class="card-layout">
+        <article class="card-layout">
           <h2>Confecciones Javana</h2>
           <a
             class="card-link"
             href="https://afsaa.github.io/Proyecto-Web-Javana/"
             target="_blank"
             rel="noopener"
-            ><i class="material-icons">
-              remove_red_eye
-            </i>
-            Mira el proyecto en vivo!</a
+            ><i class="material-icons"> remove_red_eye </i> Mira el proyecto en
+            vivo!</a
           >
           <a
             class="card-link"
             href="https://github.com/afsaa/Proyecto-Web-Javana"
             target="_blank"
             rel="noopener"
-            ><i class="material-icons">
-              code
-            </i>
-            Mira el código</a
+            ><i class="material-icons"> code </i> Mira el código</a
           >
-        </div>
-      </div>
-    </div>
+        </article>
+      </section>
+    </main>
     <script src="./js/main.js"></script>
   </body>
 </html>

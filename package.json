@@ -4,8 +4,7 @@
   "description": "Improved portfolio",
   "main": "/src/js/main.js",
   "scripts": {
-    "sass": "sass --watch src/scss:dist/css/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch src/scss:dist/css/"
   },
   "keywords": [
     "Portfolio"
@@ -13,6 +12,7 @@
   "author": "Andrés Fernando Saa",
   "license": "ISC",
   "dependencies": {
-    "@material/animation": "^7.0.0"
+    "@material/animation": "^7.0.0",
+    "sass": "^1.26.11"
   }
 }
