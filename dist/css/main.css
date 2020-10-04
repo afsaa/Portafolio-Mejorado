@@ -420,36 +420,45 @@ p {
   }
 }
 
-#cards-container {
+#projects {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-#cards-container .card {
+#projects .project__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#projects .project__container > .card {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0.6rem;
-  padding: 0.6rem;
+  padding: 1.6rem;
   border: 1px solid #007dfe;
   border-radius: 10px;
   color: #ffffff;
 }
-#cards-container .card .card-img {
+#projects .project__container > .card figure {
+  margin: 0;
+}
+#projects .project__container > .card .card-img {
   height: 20rem;
 }
-#cards-container .card .card-layout {
+#projects .project__container > .card .card-layout {
   text-align: center;
   background: transparent;
 }
-#cards-container .card .card-layout h2 {
+#projects .project__container > .card .card-layout h2 {
   margin: 10px;
   color: #ffffff;
 }
-#cards-container .card .card-link {
+#projects .project__container > .card .card-link {
   display: flex;
   align-items: center;
   margin: 10px;
@@ -462,18 +471,27 @@ p {
   text-align: center;
   transition: color 1s, background-color 1s;
 }
-#cards-container .card .card-link i {
+#projects .project__container > .card .card-link i {
   margin: 2.5px;
 }
-#cards-container .card .card-link:hover {
+#projects .project__container > .card .card-link:hover {
   color: #000000;
   background-color: #ffffff;
 }
-#cards-container .card .card-link:active {
+#projects .project__container > .card .card-link:active {
   color: #000000;
   background-color: #ffffff;
 }
-#cards-container .green-road {
+#projects .project__description {
+  margin: 0px 10px;
+}
+#projects .project__description h2 {
+  text-align: center;
+}
+#projects .project__description p {
+  text-align: justify;
+}
+#projects .green-road {
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -483,10 +501,10 @@ p {
   background-size: cover;
   background-color: #000000;
 }
-#cards-container .green-road:hover {
+#projects .green-road:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/green-road-web.webp");
 }
-#cards-container .renacer {
+#projects .renacer {
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -496,10 +514,10 @@ p {
   background-size: cover;
   background-color: #000000;
 }
-#cards-container .renacer:hover {
+#projects .renacer:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/renacer-web.webp");
 }
-#cards-container .starwars {
+#projects .starwars {
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -509,10 +527,10 @@ p {
   background-size: cover;
   background-color: #000000;
 }
-#cards-container .starwars:hover {
+#projects .starwars:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/star-wars-web.webp");
 }
-#cards-container .importexp {
+#projects .importexp {
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -522,10 +540,10 @@ p {
   background-size: cover;
   background-color: #000000;
 }
-#cards-container .importexp:hover {
+#projects .importexp:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/importexp-web.webp");
 }
-#cards-container .javana {
+#projects .javana {
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -535,13 +553,16 @@ p {
   background-size: cover;
   background-color: #000000;
 }
-#cards-container .javana:hover {
+#projects .javana:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/confecciones-javana-web.webp");
 }
 @media (max-width: 576px) {
-  #cards-container {
-    padding-left: 5%;
-    padding-right: 5%;
+  #projects {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #projects .project__container {
+    flex-direction: column;
   }
 }
 

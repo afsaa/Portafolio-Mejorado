@@ -49,140 +49,226 @@
       </nav>
     </header>
     <h1 class="page-title">Te Presento Mis Mejores Proyectos</h1>
-    <main id="cards-container">
-      <section class="card green-road">
-        <figure>
-          <img
-            src="./img/green-road-smartphone.webp"
-            loading="lazy"
-            alt="Proyecto Green Road"
+    <main id="projects">
+      <section class="project__container">
+        <article class="card green-road">
+          <figure>
+            <img
+              src="./img/green-road-smartphone.webp"
+              loading="lazy"
+              alt="Proyecto Green Road"
+              class="card-img"
+            />
+          </figure>
+          <article class="card-layout">
+            <h2>Green Road</h2>
+            <a
+              class="card-link"
+              href="https://green-road.herokuapp.com/"
+              target="_blank"
+              rel="noopener"
+              ><i class="material-icons"> remove_red_eye </i> Mira el proyecto
+              en vivo!</a
+            >
+            <a
+              class="card-link"
+              href="https://github.com/afsaa/Transporte"
+              target="_blank"
+              rel="noopener"
+              ><i class="material-icons"> code </i> Mira el código</a
+            >
+          </article>
+        </article>
+        <article class="project__description">
+          <h2>Un reto planteado a partir de una prueba</h2>
+          <p>
+            Este proyecto nace como un reto que me plantee de terminar una
+            prueba que ya había comenzado y en ese momento no pude completar. Se
+            trataba al principio de una aplicación de gestión de tareas pero la
+            transformé para que se tratara que un tema que me parece muy
+            importante (<strong>Sostenibilidad</strong>).
+            <br />
+            <strong
+              >Así creé un API usando NodeJS trayendo los datos de una BD
+              PostgreSQL y consumiendola con ReactJS usando hooks para manejar
+              el estado de la App. Desplegué esta aplicación a producción usando
+              Heroku.</strong
+            >
+          </p>
+        </article>
+      </section>
+      <section class="project__container">
+        <article class="card renacer">
+          <figure>
+            <img
+              src="./img/renacer-smartphone.webp"
+              loading="lazy"
+              alt="Proyecto Psico Renacer"
+              class="card-img"
+            />
+          </figure>
+          <article class="card-layout">
+            <h2>Centro Psicoterapéutico Renacer</h2>
+            <a
+              class="card-link"
+              href="https://awesome-pare-6129b2.netlify.com/"
+              target="_blank"
+              rel="noopener"
+              ><i class="material-icons"> remove_red_eye </i> Mira el proyecto
+              en vivo!</a
+            >
+            <a
+              class="card-link"
+              href="https://github.com/afsaa/Frontend-Renacer"
+              target="_blank"
+              rel="noopener"
+              ><i class="material-icons"> code </i> Mira el código</a
+            >
+          </article>
+        </article>
+        <article class="project__description">
+          <h2>Una de mis primeras SPA (Single Page Application)</h2>
+          <p>
+            El centro Psicoterapéutico Renacer fue uno de mis primeros proyectos
+            usando ReactJS y partió de la necesidad de una persona conocida de
+            dar a conocer sus servicios en la web de forma efectiva. Además fue
+            mi proyecto de grado, una investigación sobre la arquitectura de las
+            SPAs y su uso habitual en el desarollo web.
+            <br />
+            <strong
+              >Para lograr este resultado usé ReactJS junto con React router
+              para el manejo de las páginas, rutas y demás.</strong
+            >
+          </p>
+        </article>
+      </section>
+      <section class="project__container">
+        <article class="card starwars">
+          <figure>
+            <img
+              src="./img/star-wars-smartphone.webp"
+              loading="lazy"
+              alt="Proyecto Star Wars Characters"
+              class="card-img"
+            />
+          </figure>
+          <article class="card-layout">
+            <h2>Star Wars Characters</h2>
+            <a
+              class="card-link"
+              href="https://ecstatic-elion-7a633d.netlify.com/"
+              target="_blank"
+              rel="noopener"
+              ><i class="material-icons"> remove_red_eye </i> Mira el proyecto
+              en vivo!</a
+            >
+            <a
+              class="card-link"
+              href="https://github.com/afsaa/StarWars-Characters"
+              target="_blank"
+              rel="noopener"
+              ><i class="material-icons"> code </i> Mira el código</a
+            >
+          </article>
+        </article>
+        <article class="project__description">
+          <h2>Aprendiendo a usar hooks en ReactJS</h2>
+          <p>
+            No existe mejor maestro que la práctica. En este caso me plantee
+            este proyecto de los personajes de Star Wars como una forma de
+            aprender a usar los hooks useState y useEffect que habían llegado
+            como nuevas funcionalidades a React en aquel momento.
+            <br />
+            <strong
+              >Usé ReactJS, reactstrap (componentes de Bootstrap en React),
+              Swapi (API de Star Wars) para lograr este resultado.</strong
+            >
+          </p>
+        </article>
+      </section>
+      <section class="project__container">
+        <article class="card importexp">
+          <!--<img
+            src="./img/importexp-web.jpg"
+            alt="Proyecto Importexp"
             class="card-img"
-          />
-        </figure>
-        <article class="card-layout">
-          <h2>Green Road</h2>
-          <a
-            class="card-link"
-            href="https://green-road.herokuapp.com/"
-            target="_blank"
-            rel="noopener"
-            ><i class="material-icons"> remove_red_eye </i> Mira el proyecto en
-            vivo!</a
-          >
-          <a
-            class="card-link"
-            href="https://github.com/afsaa/Transporte"
-            target="_blank"
-            rel="noopener"
-            ><i class="material-icons"> code </i> Mira el código</a
-          >
+          />-->
+          <article class="card-layout">
+            <h2>Importexp</h2>
+            <a
+              class="card-link"
+              href="https://afsaa.github.io/ImportExp/"
+              target="_blank"
+              rel="noopener"
+              ><i class="material-icons"> remove_red_eye </i> Mira el proyecto
+              en vivo!</a
+            >
+            <a
+              class="card-link"
+              href="https://github.com/afsaa/ImportExp"
+              target="_blank"
+              rel="noopener"
+              ><i class="material-icons"> code </i> Mira el código</a
+            >
+          </article>
+        </article>
+        <article class="project__description">
+          <h2>El primer cliente</h2>
+          <p>
+            Un amigo y yo nos tirabamos pullas sobre nuestras profesiones, hasta
+            que un día le propuse mezclarlas (diseño + desarrollo) para hacer
+            algo productivo. Mi amigo logró encontrar un cliente que necesitaba
+            darse a conocer en la web y procedimos a trabajar en crear su página
+            web.
+            <br />
+            <strong
+              >Mi amigo me pasó el diseño de la web y yo usando HTML, CSS y
+              JavaScript pude hacer la pagina web realidad. Juntos lo hicimos
+              realidad!.</strong
+            >
+          </p>
         </article>
       </section>
-      <section class="card renacer">
-        <figure>
-          <img
-            src="./img/renacer-smartphone.webp"
-            loading="lazy"
-            alt="Proyecto Psico Renacer"
-            class="card-img"
-          />
-        </figure>
-        <article class="card-layout">
-          <h2>Centro Psicoterapéutico Renacer</h2>
-          <a
-            class="card-link"
-            href="https://awesome-pare-6129b2.netlify.com/"
-            target="_blank"
-            rel="noopener"
-            ><i class="material-icons"> remove_red_eye </i> Mira el proyecto en
-            vivo!</a
-          >
-          <a
-            class="card-link"
-            href="https://github.com/afsaa/Frontend-Renacer"
-            target="_blank"
-            rel="noopener"
-            ><i class="material-icons"> code </i> Mira el código</a
-          >
+      <section class="project__container">
+        <article class="card javana">
+          <!--<div class="card-img">
+            <img
+              src="./img/confecciones-javana-web.jpg"
+              alt="Proyecto Confecciones Javana"
+            />
+          </div>-->
+          <article class="card-layout">
+            <h2>Confecciones Javana</h2>
+            <a
+              class="card-link"
+              href="https://afsaa.github.io/Proyecto-Web-Javana/"
+              target="_blank"
+              rel="noopener"
+              ><i class="material-icons"> remove_red_eye </i> Mira el proyecto
+              en vivo!</a
+            >
+            <a
+              class="card-link"
+              href="https://github.com/afsaa/Proyecto-Web-Javana"
+              target="_blank"
+              rel="noopener"
+              ><i class="material-icons"> code </i> Mira el código</a
+            >
+          </article>
         </article>
-      </section>
-      <section class="card starwars">
-        <figure>
-          <img
-            src="./img/star-wars-smartphone.webp"
-            loading="lazy"
-            alt="Proyecto Star Wars Characters"
-            class="card-img"
-          />
-        </figure>
-        <article class="card-layout">
-          <h2>Star Wars Characters</h2>
-          <a
-            class="card-link"
-            href="https://ecstatic-elion-7a633d.netlify.com/"
-            target="_blank"
-            rel="noopener"
-            ><i class="material-icons"> remove_red_eye </i> Mira el proyecto en
-            vivo!</a
-          >
-          <a
-            class="card-link"
-            href="https://github.com/afsaa/StarWars-Characters"
-            target="_blank"
-            rel="noopener"
-            ><i class="material-icons"> code </i> Mira el código</a
-          >
-        </article>
-      </section>
-      <section class="card importexp">
-        <!--<img
-          src="./img/importexp-web.jpg"
-          alt="Proyecto Importexp"
-          class="card-img"
-        />-->
-        <article class="card-layout">
-          <h2>Importexp</h2>
-          <a
-            class="card-link"
-            href="https://afsaa.github.io/ImportExp/"
-            target="_blank"
-            rel="noopener"
-            ><i class="material-icons"> remove_red_eye </i> Mira el proyecto en
-            vivo!</a
-          >
-          <a
-            class="card-link"
-            href="https://github.com/afsaa/ImportExp"
-            target="_blank"
-            rel="noopener"
-            ><i class="material-icons"> code </i> Mira el código</a
-          >
-        </article>
-      </section>
-      <section class="card javana">
-        <!--<div class="card-img">
-          <img
-            src="./img/confecciones-javana-web.jpg"
-            alt="Proyecto Confecciones Javana"
-          />
-        </div>-->
-        <article class="card-layout">
-          <h2>Confecciones Javana</h2>
-          <a
-            class="card-link"
-            href="https://afsaa.github.io/Proyecto-Web-Javana/"
-            target="_blank"
-            rel="noopener"
-            ><i class="material-icons"> remove_red_eye </i> Mira el proyecto en
-            vivo!</a
-          >
-          <a
-            class="card-link"
-            href="https://github.com/afsaa/Proyecto-Web-Javana"
-            target="_blank"
-            rel="noopener"
-            ><i class="material-icons"> code </i> Mira el código</a
-          >
+        <article class="project__description">
+          <h2>Mi primer proyecto web</h2>
+          <p>
+            Mi madrastra es una experta en costura usando máquina plana y junto
+            con un tío querían dar a conocer sus camisas y guayaveras en la web.
+            Yo les propuse crear su página web para lograrlo y así nació el
+            proyecto en cuestión.
+            <br />
+            <strong
+              >Usando HTML, CSS y JavaScript además de un poco de PHP creé la
+              web que ellos estaban necesitando en su momento.</strong
+            >
+          </p>
         </article>
       </section>
     </main>

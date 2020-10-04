@@ -440,22 +440,31 @@ p {
 }
 
 //Pagina Proyectos
-#cards-container {
+#projects {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding-left: 15%;
-  padding-right: 15%;
-  .card {
+  padding-left: 10%;
+  padding-right: 10%;
+  .project__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .project__container > .card {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0.6rem;
-    padding: 0.6rem;
+    padding: 1.6rem;
     border: 1px solid #007dfe;
     border-radius: 10px;
     color: #ffffff;
+    figure {
+      margin: 0;
+    }
     .card-img {
       height: 20rem;
     }
@@ -492,6 +501,15 @@ p {
       }
     }
   }
+  .project__description {
+    margin: 0px 10px;
+    h2 {
+      text-align: center;
+    }
+    p {
+      text-align: justify;
+    }
+  }
   .green-road {
     @include project-image-bg("../img/green-road-web.webp");
   }
@@ -508,8 +526,11 @@ p {
     @include project-image-bg("../img/confecciones-javana-web.webp");
   }
   @include sm {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    .project__container {
+      flex-direction: column;
+    }
   }
 }
 
