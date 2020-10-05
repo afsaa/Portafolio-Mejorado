@@ -430,6 +430,7 @@ p {
 }
 #projects .project__container {
   width: 100%;
+  margin: 5% 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -557,6 +558,16 @@ p {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/confecciones-javana-web.webp");
 }
 @media (max-width: 576px) {
+  #projects {
+    margin: 2.5% 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #projects .project__container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
   #projects {
     padding-left: 10%;
     padding-right: 10%;
